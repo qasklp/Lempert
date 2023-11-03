@@ -1,0 +1,87 @@
+.mainTitle{
+    font-family: Inter;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    margin-bottom: 28px;
+}
+
+.title{
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contacts{
+    list-style: none;
+}
+
+.email{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.phone{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.text{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.infoSection{
+    margin-left: 124px;
+    margin-top: 80px;
+}
+
+.photo{
+    display: block;
+    width: 566px;
+    height: 850px;
+    margin-left: 40px;
+}
+
+.infoBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleBox {
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    margin-bottom: 28px;
+    justify-content: space-between;
+}
+
+.textBox{
+    display: flex;
+}
+
+.column{
+    margin-right: 28px;
+    width: calc(50% - 14px);
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.text:nth-child(odd){
+    margin-bottom: 28px;
+}

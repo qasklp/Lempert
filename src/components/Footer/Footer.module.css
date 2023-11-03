@@ -1,0 +1,18 @@
+.footerBox{
+    background-color:#000;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footerText{
+    color: #FBF6F4;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer{
+    margin-top: 180px;
+}
