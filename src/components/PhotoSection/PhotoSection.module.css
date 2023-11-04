@@ -9,8 +9,17 @@
 
 .contentList{
     display: flex;
-    overflow: visible;
-    transform: translateX(var(--bias, 0));
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.contentList::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.contentList::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 .title{
