@@ -19,6 +19,7 @@ import { Anej, title11 } from "./MediaPathes/Anej";
 import { VogueUkr, title12 } from "./MediaPathes/VogueUkr";
 import { Archives, title13 } from "./MediaPathes/Archives";
 
+
 import mainVideo from "../images/video/mainVideo.mp4";
 
 import { useState } from 'react';
