@@ -1,4 +1,4 @@
-import { VideoSection } from "./VideoSection/VideoSection";
+// import { VideoSection } from "./VideoSection/VideoSection";
 import { MainVideoSection } from "./MainVideoSection/MainVideoSection";
 import { InfoSection } from "./InfoSection/InfoSection";
 import { PhotoSection } from "./PhotoSection/PhotoSection";
