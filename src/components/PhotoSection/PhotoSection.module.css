@@ -5,7 +5,7 @@
 .contentList{
     display: flex;
     list-style: none;
-    overflow: auto;
+    overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
     cursor: ew-resize;   
