@@ -3,8 +3,7 @@ import styles from "./InfoSection.module.css";
 
 export const InfoSection = () => {
     return <section className={styles.infoSection} id="hero">
-        <div className={styles.infoBox}>
-            <div>
+            <div className={styles.infoBox}>
                 <h1 className={styles.mainTitle}>Alexandra Lempert</h1>
                 <h3 className={styles.title}>Creative/executive production, international communications</h3>
                 <div className={styles.titleBox}>
@@ -31,6 +30,5 @@ export const InfoSection = () => {
                 </div>
             </div>            
             <img src={AlexandraPhoto} alt="Alexandra" className={styles.photo} />
-        </div>
     </section>
 }

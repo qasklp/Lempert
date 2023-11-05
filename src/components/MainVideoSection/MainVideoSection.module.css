@@ -1,0 +1,77 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.video{
+    width: 100%;
+    display: block;
+
+    @media (min-width: 768px) {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+.videoSection{
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+
+    @media (min-width: 622px) {
+        padding-top: 40px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+
+    @media (max-width: 767px) {
+        height: 100vh;
+    }
+
+}
+
+.arrow{
+    position: absolute;
+    z-index: 999;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 1s ease-in-out forwards;
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: 768px) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.title{
+    color: #1D1D1D;
+    font-family: Inter;
+    font-size: 97.8px;
+    font-weight: 500;
+    line-height: 86.023%;
+    text-transform: uppercase;
+    width: 363px;
+    margin-top: 61px;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.italic{
+    font-style: italic;
+}

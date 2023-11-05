@@ -1,18 +1,34 @@
 .footerBox{
     background-color:#000;
-    height: 125px;
+    height: 115px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+        height: 125px;
+    }
 }
 
 .footerText{
     color: #FBF6F4;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
+    
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .footer{
-    margin-top: 180px;
+    margin-top: 80px;
+
+    @media (min-width: 768px) {
+        margin-top: 40px;
+    }
+
+    @media (min-width: 1620px) {
+        margin-top: 180px;
+    }
 }

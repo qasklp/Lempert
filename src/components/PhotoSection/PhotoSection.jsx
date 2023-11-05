@@ -3,10 +3,10 @@ import styles from "./PhotoSection.module.css";
 
 import { nanoid } from 'nanoid';
 
-export const PhotoSection = ({ mediaList, title }) => {
+export const PhotoSection = ({ mediaList, title, onMouseMove, onMouseDown, onMouseUp }) => {
 
-    return <section className={styles.carrousel}>
-        <ul className={styles.contentList} data-carrousel>
+    return <section className={styles.carrousel} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseLeave={onMouseUp} onMouseUp={onMouseUp}>
+        <ul className={styles.contentList} data-carrousel >
             {mediaList.map(item => {
                 if (item.type === 'photo') {
                 return <li className={styles.contentItem} key={nanoid()}><img className={styles.photo} src={item.src} alt="work example" /></li>;
@@ -35,4 +35,7 @@ export const PhotoSection = ({ mediaList, title }) => {
 PhotoSection.propTypes = {
     mediaList: PropTypes.array.isRequired,
     title: PropTypes.array.isRequired,
+    onMouseMove: PropTypes.func,
+    onMouseDown: PropTypes.func,
+    onMouseUp: PropTypes.func,
 }
