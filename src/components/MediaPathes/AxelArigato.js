@@ -4,10 +4,16 @@ import photo3 from "../../images/AxelArigato/photo_5894169927848407355_w.jpg";
 import photo4 from "../../images/AxelArigato/photo_5896628830985105730_w.jpg";
 import photo5 from "../../images/AxelArigato/photo_5896453381571064155_y.jpg";
 
+import video1 from "../../images/video/videoAxel.mp4";
+
 export const AxelArigato = [
     {
         src: photo1,
         type: 'photo',
+    },
+    {
+        src: video1,
+        type: 'video',
     },
     {
         src: photo2,

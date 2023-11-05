@@ -2,6 +2,7 @@ import photo1 from "../../images/Renan/MAIN1.jpg";
 import photo2 from "../../images/Renan/f191f3aa7aabf.jpg";
 import photo3 from "../../images/Renan/MAIN2.jpg";
 
+import video1 from "../../images/video/videoRenan.mp4";
 
 export const Renan = [
     {
@@ -15,6 +16,10 @@ export const Renan = [
     {
         src: photo3,
         type: 'photo',
+    },
+    {
+        src: video1,
+        type: 'video',
     },
 ]
 

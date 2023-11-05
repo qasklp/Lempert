@@ -1,0 +1,11 @@
+.carrouselList{
+    margin-top: 80px;
+}
+
+.carrouselItem{
+    margin-bottom: 80px;
+}
+
+.carrouselItem:last-child{
+    margin-bottom: 0;
+}

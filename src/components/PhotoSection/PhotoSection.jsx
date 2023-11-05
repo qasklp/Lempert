@@ -9,11 +9,13 @@ export const PhotoSection = ({ mediaList, title, onMouseMove, onMouseDown, onMou
         <ul className={styles.contentList} data-carrousel >
             {mediaList.map(item => {
                 if (item.type === 'photo') {
-                return <li className={styles.contentItem} key={nanoid()}><img className={styles.photo} src={item.src} alt="work example" /></li>;
+                    return <li className={styles.contentItem} key={nanoid()}>
+                        <img className={styles.photo} src={item.src} alt="work example" loading="lazy"/>
+                    </li>;
                 } else if (item.type === 'video') {
                     return (
                     <li className={styles.contentItem} key={nanoid()}>
-                        <video className={styles.video} controls>
+                        <video className={styles.video} autoPlay loop muted playsInline loading="lazy">
                             <source src={item.src} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>     

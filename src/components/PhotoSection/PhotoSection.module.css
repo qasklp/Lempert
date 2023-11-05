@@ -1,20 +1,5 @@
 .carrousel{
-    margin-top: 80px;
     position: relative;
-
-    @media (min-width: 768px) {
-        margin-top: 40px;
-    }
-
-    @media (min-width: 1620px) {
-        margin-top: 180px;
-    }
-}
-
-.carrousel:first-child{
-    @media (min-width: 1620px) {
-        margin-top: 160px;
-    }
 }
 
 .contentList{
@@ -73,6 +58,7 @@
 .photo{
     width: 322px;
     height: 400px;
+    object-fit: cover;
 
     @media (min-width: 622px) {
         width: 351px;
@@ -86,6 +72,27 @@
     
     @media (min-width: 1620px) {
         width: 658px;
+        height: 828px;
+    }
+}
+
+.video{
+    object-fit: cover;
+    width: 322px;
+    height: 400px;
+    
+    @media (min-width: 622px) {
+        width: 228px;
+        height: 442px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 344px;
+        height: 613px;
+    }
+    
+    @media (min-width: 1620px) {
+        width: 465px;
         height: 828px;
     }
 }

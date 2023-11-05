@@ -4,6 +4,8 @@ import photo3 from "../../images/Apashe/MAIN2.jpg";
 import photo4 from "../../images/Apashe/796A680891.jpg";
 import photo5 from "../../images/Apashe/796A680898.jpg";
 
+import video1 from "../../images/video/videoApashe.mp4";
+
 export const Apashe = [
     {
         src: photo1,
@@ -12,6 +14,10 @@ export const Apashe = [
     {
         src: photo2,
         type: 'photo',
+    },
+    {
+        src: video1,
+        type: 'video',
     },
     {
         src: photo3,

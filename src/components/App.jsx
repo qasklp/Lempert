@@ -1,9 +1,10 @@
-// import { VideoSection } from "./VideoSection/VideoSection";
+import { VideoSection } from "./VideoSection/VideoSection";
 import { MainVideoSection } from "./MainVideoSection/MainVideoSection";
 import { InfoSection } from "./InfoSection/InfoSection";
 import { PhotoSection } from "./PhotoSection/PhotoSection";
 import { Footer } from "./Footer/Footer";
 
+import styles from "./App.module.css";
 
 import { PerfectMan, title1 } from "./MediaPathes/PerfectMan";
 import { Margiela,title2 } from "./MediaPathes/Margiela";
@@ -21,6 +22,9 @@ import { Archives, title13 } from "./MediaPathes/Archives";
 
 
 import mainVideo from "../images/video/mainVideo.mp4";
+import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
+// import videoLucien from "../images/video/videoLucien.mp4";
+import videoAnej from "../images/video/videoAnej.mp4";
 
 import { useState } from 'react';
 
@@ -51,21 +55,58 @@ export const App = () => {
   }
     
   return (<>
-    <MainVideoSection src={mainVideo} first={true} />
+    <MainVideoSection src={mainVideo} />
     <InfoSection />
-    <PhotoSection mediaList={PerfectMan} title={title1} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Margiela} title={title2} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Apashe} title={title3} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={AxelArigatoAndre} title={title4} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Lucien} title={title5} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={MarkBuxton} title={title6} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={VoguePor} title={title7} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Renan} title={title8} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={JacobLee} title={title9} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={AxelArigato} title={title10} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Anej} title={title11} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={VogueUkr} title={title12} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
-    <PhotoSection mediaList={Archives} title={title13} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+    <ul className={styles.carrouselList}>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={PerfectMan} title={title1} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Margiela} title={title2} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Apashe} title={title3} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={AxelArigatoAndre} title={title4} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <VideoSection src={videoAxelAndre} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Lucien} title={title5} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      {/* <li className={styles.carrouselItem}>
+        <VideoSection src={videoLucien} />
+      </li> */}
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={MarkBuxton} title={title6} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={VoguePor} title={title7} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Renan} title={title8} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={JacobLee} title={title9} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={AxelArigato} title={title10} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Anej} title={title11} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <VideoSection src={videoAnej} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={VogueUkr} title={title12} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <PhotoSection mediaList={Archives} title={title13} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+    </ul>
     <Footer />
   </>
   );

@@ -23,12 +23,4 @@
 
 .footer{
     margin-top: 80px;
-
-    @media (min-width: 768px) {
-        margin-top: 40px;
-    }
-
-    @media (min-width: 1620px) {
-        margin-top: 180px;
-    }
 }
