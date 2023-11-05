@@ -1,4 +1,17 @@
 .video{
     width: 100%;
     display: block;
+    object-fit: cover;
+
+    @media (min-width: 622px) {
+        height: 442px;
+    }
+    
+    @media (min-width: 1200px) {
+        height: 613px;
+    }
+    
+    @media (min-width: 1620px) {
+        height: 828px;
+    }
 }
