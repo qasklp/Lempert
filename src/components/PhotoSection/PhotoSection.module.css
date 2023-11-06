@@ -6,6 +6,7 @@
     display: flex;
     list-style: none;
     overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     cursor: ew-resize;   
