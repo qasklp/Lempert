@@ -1,6 +1,8 @@
 import photo1 from "../../images/VoguePor/MAIN1.jpg";
 import photo2 from "../../images/VoguePor/MAIN2.jpg";
 import photo3 from "../../images/VoguePor/V1558.jpg";
+import photo4 from "../../images/VoguePor/V1561.jpg";
+import photo5 from "../../images/VoguePor/photo_5287350663069681881_y.jpg";
 
 
 export const VoguePor = [
@@ -14,6 +16,14 @@ export const VoguePor = [
     },
     {
         src: photo3,
+        type: 'photo',
+    },
+    {
+        src: photo4,
+        type: 'photo',
+    },
+    {
+        src: photo5,
         type: 'photo',
     },
 ]
