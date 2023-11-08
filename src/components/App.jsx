@@ -43,14 +43,15 @@ export const App = () => {
   }
 
   const dragStart = (e) => {
-    console.log("start");
+    e.preventDefault();
     setCarruosel(e.target.closest('ul[data-carrousel]'))
     setIsDragStart(true);
     setPrevPageX(e.pageX);
     setPrevScrollLeft(carrousel.scrollLeft)
   }
 
-  const dragStop = () => {
+  const dragStop = (e) => {
+    e.preventDefault();
     setIsDragStart(false);
   }
     
