@@ -4,7 +4,7 @@ import styles from "./VideoSection.module.css";
 export const VideoSection = ({ src }) => {
     
     return <section className={styles.videoSection}>
-        <video className={styles.video} autoPlay loop muted playsInline >
+        <video className={styles.video} autoPlay loop muted playsInline loading='auto'>
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
