@@ -1,4 +1,4 @@
-import AlexandraPhoto from "../../images/Alexandra.jpg";
+import AlexandraPhoto from "../../images/Alexandra.webp";
 import styles from "./InfoSection.module.css";
 
 export const InfoSection = () => {

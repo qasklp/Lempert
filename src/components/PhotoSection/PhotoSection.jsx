@@ -1,29 +1,31 @@
 import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
+import { memo } from 'react';
+
 import styles from "./PhotoSection.module.css";
 
-import { nanoid } from 'nanoid';
+const ContentWrapper = memo(({mediaList}) => mediaList.map(item => {
+  if (item.type === 'photo') {
+    return <li className={styles.contentItem} key={nanoid()}>
+      <img className={styles.photo} src={item.src} alt="work example" />
+    </li>;
+  } else if (item.type === 'video') {
+    return (
+      <li className={styles.contentItem} key={nanoid()}>
+        <video className={styles.video} autoPlay loop muted playsInline >
+          <source src={item.src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </li>
+    );
+  }
+  return null;
+}))
 
 export const PhotoSection = ({ mediaList, title, onMouseMove, onMouseDown, onMouseUp }) => {
-
     return <section className={styles.carrousel} onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseLeave={onMouseUp} onMouseUp={onMouseUp}>
         <ul className={styles.contentList} data-carrousel >
-            {mediaList.map(item => {
-                if (item.type === 'photo') {
-                    return <li className={styles.contentItem} key={nanoid()}>
-                        <img className={styles.photo} src={item.src} alt="work example" />
-                    </li>;
-                } else if (item.type === 'video') {
-                    return (
-                    <li className={styles.contentItem} key={nanoid()}>
-                        <video className={styles.video} autoPlay loop muted playsInline >
-                            <source src={item.src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>     
-                    </li>
-                );
-                }
-                return null;
-            })}
+          <ContentWrapper mediaList={mediaList}/>
         </ul>
         <div className={styles.titleBox}>
             {title.map(line => {

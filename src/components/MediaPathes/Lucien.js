@@ -1,10 +1,10 @@
-import photo1 from "../../images/Lucien/MAIN1.jpeg";
-import photo2 from "../../images/Lucien/MAIN2.jpeg";
-import photo3 from "../../images/Lucien/LUCIEN31.jpeg";
-import photo4 from "../../images/Lucien/LUCIEN30.jpeg";
-import photo5 from "../../images/Lucien/LUCIEN6.jpeg";
-import photo6 from "../../images/Lucien/LUCIEN4.jpeg";
-import photo7 from "../../images/Lucien/LUCIEN8.jpeg";
+import photo1 from "../../images/Lucien/MAIN1.webp";
+import photo2 from "../../images/Lucien/MAIN2.webp";
+import photo3 from "../../images/Lucien/LUCIEN31.webp";
+import photo4 from "../../images/Lucien/LUCIEN30.webp";
+import photo5 from "../../images/Lucien/LUCIEN6.webp";
+import photo6 from "../../images/Lucien/LUCIEN4.webp";
+import photo7 from "../../images/Lucien/LUCIEN8.webp";
 
 export const Lucien = [
     {

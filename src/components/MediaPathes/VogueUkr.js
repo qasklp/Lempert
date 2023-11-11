@@ -1,9 +1,9 @@
-import photo1 from "../../images/VogueUkr/MAIN1.jpeg";
-import photo2 from "../../images/VogueUkr/Main2.jpeg";
-import photo3 from "../../images/VogueUkr/v1.jpeg";
-import photo4 from "../../images/VogueUkr/v2.jpeg";
-import photo5 from "../../images/VogueUkr/v4.jpeg";
-import photo6 from "../../images/VogueUkr/v10.jpeg";
+import photo1 from "../../images/VogueUkr/MAIN1.webp";
+import photo2 from "../../images/VogueUkr/Main2.webp";
+import photo3 from "../../images/VogueUkr/v1.webp";
+import photo4 from "../../images/VogueUkr/v2.webp";
+import photo5 from "../../images/VogueUkr/v4.webp";
+import photo6 from "../../images/VogueUkr/v10.webp";
 
 
 export const VogueUkr = [
