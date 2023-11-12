@@ -1,5 +1,6 @@
 .carrousel{
     position: relative;
+    background-color: #393535;
 }
 
 .contentList{
@@ -78,6 +79,7 @@
 }
 
 .video{
+    display: block;
     object-fit: cover;
     width: 322px;
     height: 400px;
