@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Lempert/static/css/main.2826e4ba.css",
+    "main.css": "/Lempert/static/css/main.24027fb7.css",
     "main.js": "/Lempert/static/js/main.53465392.js",
     "static/media/niko.mp4": "/Lempert/static/media/niko.94c1253e2f453f7338d6.mp4",
     "static/media/videoAnej.mp4": "/Lempert/static/media/videoAnej.22c8b7686f7bfd77886a.mp4",
@@ -68,11 +68,11 @@
     "static/media/v4.webp": "/Lempert/static/media/v4.89220bc275297a110c28.webp",
     "static/media/Main2.webp": "/Lempert/static/media/Main2.8693db78bf808d70fbe6.webp",
     "index.html": "/Lempert/index.html",
-    "main.2826e4ba.css.map": "/Lempert/static/css/main.2826e4ba.css.map",
+    "main.24027fb7.css.map": "/Lempert/static/css/main.24027fb7.css.map",
     "main.53465392.js.map": "/Lempert/static/js/main.53465392.js.map"
   },
   "entrypoints": [
-    "static/css/main.2826e4ba.css",
+    "static/css/main.24027fb7.css",
     "static/js/main.53465392.js"
   ]
 }
