@@ -7,12 +7,12 @@ import styles from "./PhotoSection.module.css";
 const ContentWrapper = memo(({mediaList}) => mediaList.map(item => {
   if (item.type === 'photo') {
     return <li className={styles.contentItem} key={nanoid()}>
-      <img className={styles.photo} src={item.src} alt="work example" loading='auto'/>
+      <img className={styles.photo} src={item.src} alt="work example" />
     </li>;
   } else if (item.type === 'video') {
     return (
       <li className={styles.contentItem} key={nanoid()}>
-        <video className={styles.video} autoPlay loop muted playsInline loading='auto'>
+        <video className={styles.video} autoPlay loop muted playsInline >
           <source src={item.src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
