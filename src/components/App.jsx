@@ -56,7 +56,6 @@ export const App = () => {
   }
     
   return (<>
-    <VideoSection src={mainVideo} />
     <MainVideoSection src={mainVideo} />
     <InfoSection />
     <ul className={styles.carrouselList}>
