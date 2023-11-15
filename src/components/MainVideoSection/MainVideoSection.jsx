@@ -27,7 +27,7 @@ export const MainVideoSection = ({ src }) => {
     , []);
     
     return <section className={styles.videoSection}>
-        <video className={styles.video} autoPlay loop muted playsInline>
+        <video className={styles.video} autoPlay loop muted playsInline preload="auto">
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
