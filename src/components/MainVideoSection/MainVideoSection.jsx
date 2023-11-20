@@ -28,7 +28,7 @@ export const MainVideoSection = ({ src }) => {
     
     return <section className={styles.videoSection}>
         <video className={styles.video} autoPlay loop muted playsInline preload="auto">
-            <source src={src} type="video/mp4" />
+            <source src="/Lempert/static/media/mainVideo.50fd37a40a84d9adcd57.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         {showTitle && (
