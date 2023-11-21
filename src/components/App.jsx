@@ -26,7 +26,7 @@ import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
 // import videoLucien from "../images/video/videoLucien.mp4";
 import videoAnej from "../images/video/videoAnej.mp4";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const App = () => {
   let [isDragStart, setIsDragStart] = useState(false);
@@ -34,12 +34,40 @@ export const App = () => {
   let [prevScrollLeft, setPrevScrollLeft] = useState(null);
   let [carrousel, setCarruosel] = useState(null);
 
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) {
+      console.error("IntersectionObserver is not supported");
+      return;
+    }
+    document.querySelectorAll('video').forEach(function (video) {
+      video.classList.add('lazy');
+    })
+    document.querySelector(`video[class^='MainVideoSection']`).classList.remove('lazy');
+
+    let lazyVideos = [...document.querySelectorAll("video.lazy")]
+    console.log(lazyVideos);
+
+    let lazyVideoObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (video) {
+        if (video.isIntersecting) {
+          video.target.play();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function (lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+    document.dispatchEvent(new CustomEvent('scroll'));
+  }, []);
+
   const handleDrag = (e) => {
     if (!isDragStart) return; 
     e.preventDefault();
     let positionDiff = e.pageX - prevPageX;
     carrousel.scrollLeft = prevScrollLeft - positionDiff;
-    console.log(e.pageX);
   }
 
   const dragStart = (e) => {
