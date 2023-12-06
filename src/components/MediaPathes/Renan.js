@@ -28,4 +28,4 @@ export const Renan = [
     },
 ]
 
-export const title8 = ["L'Officiel Hommes Ukraine x", "Renan Pecheco: Parisian Man", "Morning Beauty Routine"];
+export const titleRenan = ["L'Officiel Hommes Ukraine x", "Renan Pecheco: Parisian Man", "Morning Beauty Routine"];

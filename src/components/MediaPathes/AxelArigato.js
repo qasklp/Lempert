@@ -33,4 +33,4 @@ export const AxelArigato = [
     },
 ]
 
-export const title10 = ["Axel Arigato Campaign"];
+export const titleAxelArigato = ["Axel Arigato"];

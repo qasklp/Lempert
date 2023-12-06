@@ -37,4 +37,4 @@ export const Lucien = [
     },
 ]
 
-export const title5 = ["L'Officiel Ukraine x Lucien", "Pages: Proust Questionnaire"];
+export const titleLucien = ["L'Officiel Ukraine x Lucien", "Pages: Proust Questionnaire"];

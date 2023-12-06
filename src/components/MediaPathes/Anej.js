@@ -33,4 +33,4 @@ export const Anej = [
     },
 ]
 
-export const title11 = ["L'Officiel Hommes Ukraine", "Cover Strory February'23:", "Anej Sosic"];
+export const titleAnej = ["L'Officiel Hommes Ukraine", "Cover Strory February'23:", "Anej Sosic"];

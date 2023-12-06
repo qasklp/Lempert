@@ -28,4 +28,4 @@ export const VoguePor = [
     },
 ]
 
-export const title7 = ["Vogue Portugal Print April'22"];
+export const titleVoguePor = ["Vogue Portugal Print April'22"];

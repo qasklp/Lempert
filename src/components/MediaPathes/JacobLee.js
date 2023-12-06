@@ -44,4 +44,4 @@ export const JacobLee = [
     },
 ]
 
-export const title9 = ["Jacob Lee Campaign'23: Etretat"];
+export const titleJacobLee = ["Jacob Lee Campaign'23: Etretat"];

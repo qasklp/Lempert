@@ -23,4 +23,4 @@ export const MarkBuxton = [
     },
 ]
 
-export const title6 = ["L'Officiel Hommes Ukraine x", "Mark Buxton:", "Proust Questionnaire"];
+export const titleMarkBuxton = ["L'Officiel Hommes Ukraine x", "Mark Buxton:", "Proust Questionnaire"];

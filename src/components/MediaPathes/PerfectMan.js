@@ -48,4 +48,4 @@ export const PerfectMan = [
     },
 ]
 
-export const title1 = ["Perfect Man Magazine cover", "Spring 23"];
+export const titlePerfectMan = ["Perfect Man Magazine cover", "Spring 23"];

@@ -43,4 +43,4 @@ export const AxelArigatoAndre = [
     },
 ]
 
-export const title4 = ["Axel Arigato", "x Andre Saraiva Collaboration"];
+export const titleAxelArigatoAndre = ["Axel Arigato", "x Andre Saraiva Collaboration"];

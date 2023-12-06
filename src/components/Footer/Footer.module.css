@@ -15,6 +15,7 @@
     color: #FBF6F4;
     font-size: 16px;
     font-weight: 600;
+    text-transform: uppercase;
     
     @media (min-width: 768px) {
         font-size: 24px;

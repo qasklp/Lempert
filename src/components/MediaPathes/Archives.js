@@ -34,4 +34,4 @@ export const Archives= [
     },
 ]
 
-export const title13 = ["ARCHIVES"];
+export const titleArchives = ["Archives"];

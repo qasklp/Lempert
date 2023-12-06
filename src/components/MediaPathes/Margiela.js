@@ -68,4 +68,4 @@ export const Margiela = [
     },
 ]
 
-export const title2 = ["Maison Margiela Campaign'23"];
+export const titleMargiela = ["Maison Margiela Campaign'23"];

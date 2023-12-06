@@ -33,4 +33,4 @@ export const Apashe = [
     },
 ]
 
-export const title3 = ["L'Officiel Hommes Ukraine x", "Apashe: Proust Questionnaire"];
+export const titleApashe = ["L'Officiel Hommes Ukraine x", "Apashe: Proust Questionnaire"];
