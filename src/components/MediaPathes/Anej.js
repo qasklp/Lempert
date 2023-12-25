@@ -31,6 +31,20 @@ export const Anej = [
         src: photo6,
         type: 'photo',
     },
+    {
+        text: [
+            'General production: Alexandra Lempert @allle.xandra',
+            'DOP: Milo Chiavarino @milochiavarino',
+            'Photographer: Nick Naida @nicknaida',
+            'Cover Hero: Anej Sosic @anej_sosic',
+            'Stylist: Simon Nygard @simonnygard',
+            'Stylist Assistant: Alexandra Orazova @orazova',
+            'HMUA: Svitlana Koroleva @s.koroleva.mua',
+            'Editor-in-Chief: Alexey Nilov @niloveditor',
+        ],
+        special: "With the support of amazing Andre Saraiva @andresaraiva and @hotelsamourparis 🖤",
+        type: 'credits',
+    },
 ]
 
 export const titleAnej = ["L'Officiel Hommes Ukraine", "Cover Strory February'23:", "Anej Sosic"];

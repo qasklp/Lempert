@@ -21,6 +21,17 @@ export const MarkBuxton = [
         src: video1,
         type: 'video',
     },
+    {
+        text: [
+            'Hero: Mark Buxton @buxton.mark @markbuxtonperfumes',
+            'General production: Alexandra Lempert @allle.xandra',
+            'Director: Milo Chiavarino @milochiavarino',
+            'Photographer: Nick Naida @nicknaida',
+            'MUA: Svitlana Koroleva @s.koroleva.mua',
+            'Editor-in-Chief: Alexey Nilov @niloveditor @lofficielukraine @lofficielhommesua',
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titleMarkBuxton = ["L'Officiel Hommes Ukraine x", "Mark Buxton:", "Proust Questionnaire"];

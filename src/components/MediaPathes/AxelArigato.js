@@ -31,6 +31,17 @@ export const AxelArigato = [
         src: photo5,
         type: 'photo',
     },
+    {
+        text: [
+            'Hero: Apashe @apashe',
+            'General production: Alexandra Lempert @allle.xandra',
+            'Director: Milo Chiavarino @milochiavarino',
+            'Photo: Nick Naida @nicknaida',
+            'HMUA: Tanya Fedorenko',
+        ],
+        special: "Editor-in-Chief: Alexey Nilov @niloveditor @lofficielukraine @lofficielhommesua",
+        type: 'credits',
+    },
 ]
 
 export const titleAxelArigato = ["Axel Arigato"];

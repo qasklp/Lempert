@@ -42,6 +42,16 @@ export const JacobLee = [
         src: photo5,
         type: 'photo',
     },
+    {
+        text: [
+            'General production: Alexandra Lempert @allle.xandra',
+            'Photo: @denis.nemyachenko',
+            'HNUA: @elow.mua',
+            'Models: @juliettemaguette @sofiasilvanas',
+            'Video: Alex Wait and Ilya Cherepitsa'
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titleJacobLee = ["Jacob Lee Campaign'23: Etretat"];

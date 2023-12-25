@@ -26,6 +26,18 @@ export const VoguePor = [
         src: photo5,
         type: 'photo',
     },
+    {
+        text: [
+            'Editor in Chief: Sofia Lucas',
+            'Photo: Bedos Antoine',
+            'Production assistance: Alexandra Lempert',
+            'Models: Margo and Maddie Whitley',
+            'Style: Dione Occipinti',
+            'Casting: Remi Felipe',
+            'HMUA: Fidel Fernandez',
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titleVoguePor = ["Vogue Portugal Print April'22"];

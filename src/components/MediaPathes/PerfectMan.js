@@ -46,6 +46,21 @@ export const PerfectMan = [
         src: photo9,
         type: 'photo',
     },
+    {
+        text: [
+            "General production: Alexandra Lempert @allle.xandra",
+            "1st unit cameraman: @fryed_pin_family",
+            "1st AC: @tony.prores",
+            "Editor/sound: @fryed_pin_family",
+            "Soundtrack: @andreykosach",
+            "Color editing: @timtimphoto",
+            "2nd unit cameraman: @dedremo",
+            "BTS photo: @ana.sta.sea",
+            "Model: @robe_mood",
+            "Production assistant: @nlagutin"
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titlePerfectMan = ["Perfect Man Magazine cover", "Spring 23"];

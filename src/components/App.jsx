@@ -21,6 +21,7 @@ import { Archives, titleArchives } from "./MediaPathes/Archives";
 
 
 import mainVideo from "../images/video/mainVideo.mp4";
+import videoMcQueen from "../images/video/videoMcQueen.mp4"
 import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
 // import videoLucien from "../images/video/videoLucien.mp4";
 import videoAnej from "../images/video/videoAnej.mp4";
@@ -91,6 +92,9 @@ export const App = () => {
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Apashe} title={titleApashe} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <VideoSection src={videoMcQueen} />
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={AxelArigatoAndre} title={titleAxelArigatoAndre} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />

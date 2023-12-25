@@ -66,6 +66,15 @@ export const Margiela = [
         src: photo10,
         type: 'photo',
     },
+    {
+        text: [
+            'Brand: Maison Margiela',
+            'Production Assistance for Sheriff.Projects: Alexandra Lempert',
+            'Production: Kitten Production',
+            'Photo and Video: Britt Loyd'
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titleMargiela = ["Maison Margiela Campaign'23"];

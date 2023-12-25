@@ -41,6 +41,23 @@ export const AxelArigatoAndre = [
         src: photo8,
         type: 'photo',
     },
+    {
+        text: [
+            'Creative Director: @manlikemilan',
+            'Photographer: @noelquintela',
+            'General production: @allle.xandra',
+            'Set designer: @alexandreroy',
+            '1st Assistant: @jac_revald',
+            'DOP: @thealexwait',
+            'Stylist: @maxkatt',
+            'MUA: @dashou.charles',
+            'Digitech: caroledurosoy',
+            'Photo 1st Assistant: @analog.tom',
+            'Photo 2nd Assistant: @silviarocchino'
+        ],
+        special: "Models: @lamzodia, @tian0t_t0",
+        type: 'credits',
+    },
 ]
 
 export const titleAxelArigatoAndre = ["Axel Arigato", "x Andre Saraiva Collaboration"];

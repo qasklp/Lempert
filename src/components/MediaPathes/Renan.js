@@ -26,6 +26,18 @@ export const Renan = [
         src: photo4,
         type: 'photo',
     },
+    {
+        text: [
+            'Hero: Renan Pacheco @iamrenanpacheco',
+            'General production: Alexandra Lempert @allle.xandra',
+            'Director: Milo Chiavarino @milochiavarino',
+            'Photographer: Denis Nemyachenko @denis.nemyachenko',
+            'Stylist: Max Katt @maxkatt',
+            'Editor-in-Chief: @niloveditor @lofficielukraine @lofficielhommesua',
+        ],
+        special: "Special thanks to JK Hotels @jkplaceparis",
+        type: 'credits',
+    },
 ]
 
 export const titleRenan = ["L'Officiel Hommes Ukraine x", "Renan Pecheco: Parisian Man", "Morning Beauty Routine"];

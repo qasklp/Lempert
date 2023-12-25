@@ -35,6 +35,16 @@ export const Lucien = [
         src: photo7,
         type: 'photo',
     },
+    {
+        text: [
+            'Hero: Lucien Pagès @lucienpages @lucienpagescommunication',
+            'General production: Alexandra Lempert @allle.xandra',
+            'Cinematographer: Milo Chiavarino @milochiavarino',
+            'Photographer: Nick Naida @nicknaida',
+            'Editor-in-Chief: Alexey Nilov @niloveditor @lofficielukraine @lofficielhommesua',
+        ],
+        type: 'credits',
+    },
 ]
 
 export const titleLucien = ["L'Officiel Ukraine x Lucien", "Pages: Proust Questionnaire"];
