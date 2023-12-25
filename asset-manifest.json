@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Lempert/static/css/main.b38b54ec.css",
-    "main.js": "/Lempert/static/js/main.1da14da2.js",
+    "main.css": "/Lempert/static/css/main.4ad1299a.css",
+    "main.js": "/Lempert/static/js/main.2f7e0fc2.js",
     "static/media/niko.mp4": "/Lempert/static/media/niko.94c1253e2f453f7338d6.mp4",
     "static/media/videoAnej.mp4": "/Lempert/static/media/videoAnej.22c8b7686f7bfd77886a.mp4",
     "static/media/videoBuxton.mp4": "/Lempert/static/media/videoBuxton.4c58c0be30b2e7d1005c.mp4",
+    "static/media/videoMcQueen.mp4": "/Lempert/static/media/videoMcQueen.648ba130d0819a9adfa2.mp4",
     "static/media/mainVideo.mp4": "/Lempert/static/media/mainVideo.50fd37a40a84d9adcd57.mp4",
     "static/media/videoAxelAndre.mp4": "/Lempert/static/media/videoAxelAndre.01353721196f74ee5fcc.mp4",
     "static/media/videoRenan.mp4": "/Lempert/static/media/videoRenan.16906afd0eaf01e7ac17.mp4",
@@ -59,15 +60,21 @@
     "static/media/A8.webp": "/Lempert/static/media/A8.57d2bf6e228302e92c59.webp",
     "static/media/J1552.webp": "/Lempert/static/media/J1552.2403edb2b99a538957a0.webp",
     "static/media/DSCF7604.webp": "/Lempert/static/media/DSCF7604.f48cc180709fe982f1fc.webp",
+    "static/media/A2.png": "/Lempert/static/media/A2.e14729c17bd3c3d3c0a9.png",
     "static/media/DSCF7530.webp": "/Lempert/static/media/DSCF7530.c6d7016418b184b037af.webp",
+    "static/media/A1.png": "/Lempert/static/media/A1.4150a52fead0658f32a7.png",
+    "static/media/A5.png": "/Lempert/static/media/A5.601d79c375bdcbcc336f.png",
     "static/media/V1561.webp": "/Lempert/static/media/V1561.a224f4a007c15ce3db98.webp",
     "static/media/M2791.webp": "/Lempert/static/media/M2791.2cbc354b720ed634b6d0.webp",
+    "static/media/A4.png": "/Lempert/static/media/A4.35908c184f6b1e570ded.png",
+    "static/media/A6.png": "/Lempert/static/media/A6.797bb7dc2b726cb81756.png",
+    "static/media/A3.png": "/Lempert/static/media/A3.ac0a94850269affc6330.png",
     "index.html": "/Lempert/index.html",
-    "main.b38b54ec.css.map": "/Lempert/static/css/main.b38b54ec.css.map",
-    "main.1da14da2.js.map": "/Lempert/static/js/main.1da14da2.js.map"
+    "main.4ad1299a.css.map": "/Lempert/static/css/main.4ad1299a.css.map",
+    "main.2f7e0fc2.js.map": "/Lempert/static/js/main.2f7e0fc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b38b54ec.css",
-    "static/js/main.1da14da2.js"
+    "static/css/main.4ad1299a.css",
+    "static/js/main.2f7e0fc2.js"
   ]
 }
