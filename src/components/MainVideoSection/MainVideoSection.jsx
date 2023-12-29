@@ -35,6 +35,7 @@ export const MainVideoSection = ({ src }) => {
                 frameBorder="0"
                 allow="autoplay; fullscreen"
                 allowFullScreen
+                className={styles.video}
             ></iframe>
 
             {showTitle && (
