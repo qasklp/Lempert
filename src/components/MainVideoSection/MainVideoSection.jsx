@@ -29,7 +29,7 @@ export const MainVideoSection = ({ src }) => {
         <section className={styles.videoSection}>
             <iframe
                 title="Vimeo Video"
-                src="https://player.vimeo.com/video/897849313?autoplay=1&loop=1&muted=1"
+                src="https://player.vimeo.com/video/897849313?autoplay=1&loop=1&muted=1&controls=0"
                 width="100%"
                 height="100%"
                 frameBorder="0"
