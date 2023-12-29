@@ -44,7 +44,6 @@ export const App = () => {
     })
 
     let lazyVideos = [...document.querySelectorAll("video.lazy")]
-    console.log(lazyVideos);
 
     let lazyVideoObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (video) {
