@@ -42,7 +42,6 @@ export const App = () => {
     document.querySelectorAll('video').forEach(function (video) {
       video.classList.add('lazy');
     })
-    document.querySelector(`video[class^='MainVideoSection']`).classList.remove('lazy');
 
     let lazyVideos = [...document.querySelectorAll("video.lazy")]
     console.log(lazyVideos);
