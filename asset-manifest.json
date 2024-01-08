@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/Lempert/static/css/main.933cc508.css",
-    "main.js": "/Lempert/static/js/main.4207ca4b.js",
-    "static/media/niko.mp4": "/Lempert/static/media/niko.94c1253e2f453f7338d6.mp4",
-    "static/media/videoAnej.mp4": "/Lempert/static/media/videoAnej.22c8b7686f7bfd77886a.mp4",
-    "static/media/videoBuxton.mp4": "/Lempert/static/media/videoBuxton.4c58c0be30b2e7d1005c.mp4",
+    "main.js": "/Lempert/static/js/main.90d1b409.js",
+    "static/media/videoLucien.mov": "/Lempert/static/media/videoLucien.09dbb00224d2f3ab57d7.mov",
     "static/media/videoMcQueen.mp4": "/Lempert/static/media/videoMcQueen.648ba130d0819a9adfa2.mp4",
-    "static/media/mainVideo.mp4": "/Lempert/static/media/mainVideo.50fd37a40a84d9adcd57.mp4",
     "static/media/videoAxelAndre.mp4": "/Lempert/static/media/videoAxelAndre.01353721196f74ee5fcc.mp4",
     "static/media/videoRenan.mp4": "/Lempert/static/media/videoRenan.16906afd0eaf01e7ac17.mp4",
     "static/media/videoApashe.mp4": "/Lempert/static/media/videoApashe.5f69f725c3f20bbb78ba.mp4",
     "static/media/jacobLee3.mp4": "/Lempert/static/media/jacobLee3.d070e085d709b8e6b4bc.mp4",
     "static/media/jacobLee2.mp4": "/Lempert/static/media/jacobLee2.1a56eef3bc665dafd913.mp4",
+    "static/media/mainVideo.mp4": "/Lempert/static/media/mainVideo.1a50c72df00003cc3888.mp4",
+    "static/media/videoAnej.mp4": "/Lempert/static/media/videoAnej.c7177ca2db7ea53c0c12.mp4",
     "static/media/jacobLee.mp4": "/Lempert/static/media/jacobLee.af87f41504b931b9ee5c.mp4",
     "static/media/margiela2.mp4": "/Lempert/static/media/margiela2.8889cb76818e1a6509d1.mp4",
     "static/media/margiela6.mp4": "/Lempert/static/media/margiela6.dcdaba1b5d5f35b4d94e.mp4",
+    "static/media/videoBuxton.mp4": "/Lempert/static/media/videoBuxton.47431eab6e7891958d9d.mp4",
+    "static/media/niko.mp4": "/Lempert/static/media/niko.2cc2cf5d1f85673bc45f.mp4",
     "static/media/videoAxel.mp4": "/Lempert/static/media/videoAxel.c0898146cc55e737175e.mp4",
     "static/media/margiela9.mp4": "/Lempert/static/media/margiela9.676c38e981ddbb537071.mp4",
     "static/media/m14.jpg": "/Lempert/static/media/m14.c83253133fefcab6a2ad.jpg",
@@ -37,6 +38,7 @@
     "static/media/J1553.webp": "/Lempert/static/media/J1553.88155b7327f2ceb37728.webp",
     "static/media/a10.webp": "/Lempert/static/media/a10.ab3c8fff48a6ae3aa6fe.webp",
     "static/media/296ff66951f.webp": "/Lempert/static/media/296ff66951f.837be78e862c57648921.webp",
+    "static/media/m27.jpg": "/Lempert/static/media/m27.a731b51417bdcdbfb1ca.jpg",
     "static/media/LUCIEN31.webp": "/Lempert/static/media/LUCIEN31.9fc895bca1297f3c5507.webp",
     "static/media/A3546.webp": "/Lempert/static/media/A3546.22a3ad47cc3d1427e687.webp",
     "static/media/LUCIEN8.webp": "/Lempert/static/media/LUCIEN8.7b3fec674a58b48a980f.webp",
@@ -56,7 +58,9 @@
     "static/media/A6.webp": "/Lempert/static/media/A6.72809152af02c2b52b0e.webp",
     "static/media/9.webp": "/Lempert/static/media/9.7b4511b7d7f3c7475800.webp",
     "static/media/LUCIEN6.webp": "/Lempert/static/media/LUCIEN6.4bc61af2cd9911e0a79e.webp",
+    "static/media/m5.jpg": "/Lempert/static/media/m5.e0259dfd0b7da12ab937.jpg",
     "static/media/A7.webp": "/Lempert/static/media/A7.22d0a7f18f68fa8170b8.webp",
+    "static/media/m10.jpg": "/Lempert/static/media/m10.b87e7a8cf4684f6dd940.jpg",
     "static/media/A8.webp": "/Lempert/static/media/A8.57d2bf6e228302e92c59.webp",
     "static/media/J1552.webp": "/Lempert/static/media/J1552.2403edb2b99a538957a0.webp",
     "static/media/DSCF7604.webp": "/Lempert/static/media/DSCF7604.f48cc180709fe982f1fc.webp",
@@ -71,10 +75,10 @@
     "static/media/A3.png": "/Lempert/static/media/A3.ac0a94850269affc6330.png",
     "index.html": "/Lempert/index.html",
     "main.933cc508.css.map": "/Lempert/static/css/main.933cc508.css.map",
-    "main.4207ca4b.js.map": "/Lempert/static/js/main.4207ca4b.js.map"
+    "main.90d1b409.js.map": "/Lempert/static/js/main.90d1b409.js.map"
   },
   "entrypoints": [
     "static/css/main.933cc508.css",
-    "static/js/main.4207ca4b.js"
+    "static/js/main.90d1b409.js"
   ]
 }
