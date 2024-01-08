@@ -27,16 +27,17 @@ export const MainVideoSection = ({ src }) => {
 
     return (
         <section className={styles.videoSection}>
-            <iframe
-                title="Vimeo Video"
-                src="https://player.vimeo.com/video/897849313?autoplay=1&loop=1&muted=1&controls=0"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen
+            <video
+                title="Your Video"
+                autoPlay
+                loop
+                muted
+                controls={false}
                 className={styles.video}
-            ></iframe>
+            >
+                <source src={src} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
             {showTitle && (
                 <h2 className={styles.title}>

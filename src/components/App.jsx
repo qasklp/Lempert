@@ -9,6 +9,7 @@ import styles from "./App.module.css";
 import { PerfectMan, titlePerfectMan } from "./MediaPathes/PerfectMan";
 import { Margiela,titleMargiela } from "./MediaPathes/Margiela";
 import { Apashe, titleApashe } from "./MediaPathes/Apashe";
+import { McQueen, titleMcQueen } from "./MediaPathes/McQueen";
 import { AxelArigatoAndre, titleAxelArigatoAndre } from "./MediaPathes/AxelArigatoAndre";
 import { Lucien, titleLucien } from "./MediaPathes/Lucien";
 import { MarkBuxton, titleMarkBuxton } from "./MediaPathes/MarkBuxton";
@@ -21,12 +22,12 @@ import { Archives, titleArchives } from "./MediaPathes/Archives";
 
 
 import mainVideo from "../images/video/mainVideo.mp4";
-import videoMcQueen from "../images/video/videoMcQueen.mp4"
 import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
-// import videoLucien from "../images/video/videoLucien.mp4";
 import videoAnej from "../images/video/videoAnej.mp4";
+import videoLucien from "../images/video/videoLucien.mov";
 
 import { useState, useEffect } from 'react';
+
 
 export const App = () => {
   let [isDragStart, setIsDragStart] = useState(false);
@@ -92,7 +93,7 @@ export const App = () => {
         <PhotoSection mediaList={Apashe} title={titleApashe} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
-        <VideoSection src={videoMcQueen} />
+        <PhotoSection mediaList={McQueen} title={titleMcQueen} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={AxelArigatoAndre} title={titleAxelArigatoAndre} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
@@ -109,9 +110,9 @@ export const App = () => {
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Lucien} title={titleLucien} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
-      {/* <li className={styles.carrouselItem}>
+      <li className={styles.carrouselItem}>
         <VideoSection src={videoLucien} />
-      </li> */}
+      </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={MarkBuxton} title={titleMarkBuxton} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
