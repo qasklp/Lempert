@@ -5,6 +5,7 @@ import styles from "./MainVideoSection.module.css";
 export const MainVideoSection = ({ src }) => {
     const [showArrow, setShowArrow] = useState(false);
     const [showTitle, setShowTitle] = useState(window.innerWidth < 768);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -25,8 +26,18 @@ export const MainVideoSection = ({ src }) => {
         return () => clearTimeout(timeout);
     }, []);
 
+    const handleVideoLoad = () => {
+        setVideoLoaded(true);
+    };
+
     return (
         <section className={styles.videoSection}>
+            {!videoLoaded && (
+                <div className={styles.loader}>
+                    <p className={styles.loaderText}>Alexandra Lempert</p>
+                </div>
+            )}
+
             <video
                 title="Your Video"
                 autoPlay
@@ -34,6 +45,7 @@ export const MainVideoSection = ({ src }) => {
                 muted
                 controls={false}
                 className={styles.video}
+                onLoadedData={handleVideoLoad}
             >
                 <source src={src} type="video/mp4" />
                 Your browser does not support the video tag.
