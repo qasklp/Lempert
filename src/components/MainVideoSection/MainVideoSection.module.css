@@ -47,7 +47,6 @@
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-    animation: fadeIn 1s ease-in-out forwards;
     width: 32px;
     height: 32px;
 
@@ -78,10 +77,16 @@
 }
 
 .loader{
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .loaderText{
@@ -90,4 +95,6 @@
     font-size: 34px;
     font-weight: 700;
     text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards;
 }

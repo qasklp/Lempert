@@ -2,6 +2,7 @@ import { VideoSection } from "./VideoSection/VideoSection";
 import { MainVideoSection } from "./MainVideoSection/MainVideoSection";
 import { InfoSection } from "./InfoSection/InfoSection";
 import { PhotoSection } from "./PhotoSection/PhotoSection";
+import { Credits } from "./Credits/Credits";
 import { Footer } from "./Footer/Footer";
 
 import styles from "./App.module.css";
@@ -34,6 +35,18 @@ export const App = () => {
   let [prevPageX, setPrevPageX] = useState(null);
   let [prevScrollLeft, setPrevScrollLeft] = useState(null);
   let [carrousel, setCarruosel] = useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (!("IntersectionObserver" in window)) {
@@ -81,6 +94,16 @@ export const App = () => {
     e.preventDefault();
     setIsDragStart(false);
   }
+
+  const renderSection = (mediaList, title) => {
+    return isSmallScreen ? (<>
+      <VideoSection src={mediaList[0].src} />
+      <Credits info={ mediaList[1].text} />
+    </>
+    ) : (
+      <PhotoSection mediaList={mediaList} title={title} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+    );
+  };
     
   return (<>
     <MainVideoSection src={mainVideo} />
@@ -93,7 +116,7 @@ export const App = () => {
         <PhotoSection mediaList={Apashe} title={titleApashe} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
-        <PhotoSection mediaList={McQueen} title={titleMcQueen} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+        {renderSection(McQueen, titleMcQueen)}
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={AxelArigatoAndre} title={titleAxelArigatoAndre} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
