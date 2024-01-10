@@ -36,6 +36,7 @@ export const App = () => {
   let [prevScrollLeft, setPrevScrollLeft] = useState(null);
   let [carrousel, setCarruosel] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -95,6 +96,10 @@ export const App = () => {
     setIsDragStart(false);
   }
 
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+  };
+
   const renderSection = (mediaList, title) => {
     return isSmallScreen ? (<>
       <VideoSection src={mediaList[0].src} />
@@ -106,9 +111,9 @@ export const App = () => {
   };
     
   return (<>
-    <MainVideoSection src={mainVideo} />
-    <InfoSection />
-    <ul className={styles.carrouselList}>
+    <MainVideoSection src={mainVideo} onLoad={handleVideoLoad} />
+    {isVideoLoaded && <InfoSection />}
+    {isVideoLoaded && <ul className={styles.carrouselList}>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={PerfectMan} title={titlePerfectMan} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
@@ -157,8 +162,8 @@ export const App = () => {
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Archives} title={titleArchives} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
-    </ul>
-    <Footer />
+    </ul>}
+    {isVideoLoaded && <Footer />}
   </>
   );
 };
