@@ -36,7 +36,7 @@ export const App = () => {
   let [prevScrollLeft, setPrevScrollLeft] = useState(null);
   let [carrousel, setCarruosel] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isThreeSecondsPassed, setIsThreeSecondsPassed] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -96,9 +96,13 @@ export const App = () => {
     setIsDragStart(false);
   }
 
-  const handleVideoLoad = () => {
-    setIsVideoLoaded(true);
-  };
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsThreeSecondsPassed(true);
+    }, 3000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const renderSection = (mediaList, title) => {
     return isSmallScreen ? (<>
@@ -111,9 +115,9 @@ export const App = () => {
   };
     
   return (<>
-    <MainVideoSection src={mainVideo} onLoad={handleVideoLoad} />
-    {isVideoLoaded && <InfoSection />}
-    {isVideoLoaded && <ul className={styles.carrouselList}>
+    <MainVideoSection src={mainVideo} />
+    {isThreeSecondsPassed && <InfoSection />}
+    {isThreeSecondsPassed && <ul className={styles.carrouselList}>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={PerfectMan} title={titlePerfectMan} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
@@ -163,7 +167,7 @@ export const App = () => {
         <PhotoSection mediaList={Archives} title={titleArchives} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
     </ul>}
-    {isVideoLoaded && <Footer />}
+    {isThreeSecondsPassed && <Footer />}
   </>
   );
 };
