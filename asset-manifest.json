@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Lempert/static/css/main.18e5471d.css",
+    "main.css": "/Lempert/static/css/main.20bcb169.css",
     "main.js": "/Lempert/static/js/main.e227a166.js",
     "static/media/videoLucien.mov": "/Lempert/static/media/videoLucien.09dbb00224d2f3ab57d7.mov",
     "static/media/videoMcQueen.mp4": "/Lempert/static/media/videoMcQueen.648ba130d0819a9adfa2.mp4",
@@ -74,11 +74,11 @@
     "static/media/A6.png": "/Lempert/static/media/A6.797bb7dc2b726cb81756.png",
     "static/media/A3.png": "/Lempert/static/media/A3.ac0a94850269affc6330.png",
     "index.html": "/Lempert/index.html",
-    "main.18e5471d.css.map": "/Lempert/static/css/main.18e5471d.css.map",
+    "main.20bcb169.css.map": "/Lempert/static/css/main.20bcb169.css.map",
     "main.e227a166.js.map": "/Lempert/static/js/main.e227a166.js.map"
   },
   "entrypoints": [
-    "static/css/main.18e5471d.css",
+    "static/css/main.20bcb169.css",
     "static/js/main.e227a166.js"
   ]
 }
