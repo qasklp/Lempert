@@ -77,16 +77,10 @@
 }
 
 .loader{
-    position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, 0);
-    @media (min-width: 768px) {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
 }
 
 .loaderText{
@@ -97,4 +91,8 @@
     text-transform: uppercase;
     opacity: 0;
     animation: fadeIn 3s linear forwards;
+}
+
+.hidden{
+    z-index: -1;
 }

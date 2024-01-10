@@ -26,6 +26,8 @@ export const MainVideoSection = ({ src }) => {
         return () => clearTimeout(timeoutId);
     }, []);
 
+    const videoClasses = `${styles.video} ${!isThreeSecondsPassed && styles.hidden}`;
+
     return (
         <section className={styles.videoSection}>
             {!isThreeSecondsPassed && (
@@ -34,18 +36,17 @@ export const MainVideoSection = ({ src }) => {
                 </div>
             )}
 
-            {isThreeSecondsPassed && < video
-                    title="Your Video"
-                    autoPlay
-                    loop
-                    muted
-                    controls={false}
-                    className={styles.video}
-                >
-                    <source src={src} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            }
+            <video
+                title="Your Video"
+                autoPlay
+                loop
+                muted
+                controls={false}
+                className={videoClasses}
+            >
+                <source src={src} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
             {isThreeSecondsPassed && showTitle && (
                 <h2 className={styles.title}>
