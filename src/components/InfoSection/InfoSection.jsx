@@ -14,9 +14,6 @@ export const InfoSection = () => {
                     <li className={styles.contactItem}>
                         <a href="mailto:allexandra.lempert@gmail.com" className={styles.email}>allexandra.lempert@gmail.com</a>
                     </li>
-                    <li className={styles.contactItem}>
-                        <a href="tel:+33767097907" className={styles.phone}>+33767097907</a>
-                    </li>
                 </ul>
                 <div className={styles.textBox}>
                     <div className={styles.column}>
