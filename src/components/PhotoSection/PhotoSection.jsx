@@ -19,11 +19,27 @@ const ContentWrapper = memo(({mediaList}) => mediaList.map(item => {
       </li>
     );
   } else if (item.type === 'credits') {
-    const specialArray = item.special ? item.special.split(':') : []; 
+    const specialArray = item.special ? item.special.split(':') : [];
+    const firstRowArray = item.firstRow ? item.firstRow.split(':') : [];
 
     return <li className={styles.contentItem} key={nanoid()}>
       <div className={styles.credits}>
         <ul className={styles.creditsList}>
+          {firstRowArray.length === 1 && (
+              <li className={`${styles.creditsItem} ${styles.creditsFirstRow}`} key={nanoid()}>
+                <p className={styles.creditsText}>
+                  {firstRowArray[0]}
+                </p>
+              </li>
+            )}
+            {firstRowArray.length === 2 && (
+              <li className={`${styles.creditsItem} ${styles.creditsFirstRow}`} key={nanoid()}>
+                <p className={styles.creditsText}>
+                  <span className={styles.creditsRole}>{firstRowArray[0]}:</span>
+                  {firstRowArray[1]}
+                </p>
+              </li>
+            )}
           {item.text.map(line => {
             const [role, name] = line.split(':');
             return <li className={styles.creditsItem} key={nanoid()}>

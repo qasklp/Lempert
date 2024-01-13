@@ -49,16 +49,14 @@ export const PerfectMan = [
     {
         text: [
             "General production: Alexandra Lempert @allle.xandra",
-            "1st unit cameraman: @fryed_pin_family",
-            "1st AC: @tony.prores",
-            "Editor/sound: @fryed_pin_family",
-            "Soundtrack: @andreykosach",
-            "Color editing: @timtimphoto",
-            "2nd unit cameraman: @dedremo",
-            "BTS photo: @ana.sta.sea",
-            "Model: @robe_mood",
-            "Production assistant: @nlagutin"
+            "Photo: Denis Nemyachenko @denis.nemyachenko",
+            "Model: Dmitry Tamakhyn @earl_noire",
+            "Style: Max Katt @maxkatt",
+            "HMUA: Daria Charles @dashou.charles",
+            "Production Assistant: Dinara Kovaleva @maisondinara",
         ],
+        special: "Special thanks to George Malakhov @georgy_malakhov",
+        firstRow: "Magazine: Perfect Man Mag",
         type: 'credits',
     },
 ]
