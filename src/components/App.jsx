@@ -29,6 +29,8 @@ import videoLucien from "../images/video/videoLucien.mov";
 
 import { useState, useEffect } from 'react';
 
+const videoApashe = "https://vimeo.com/902262650";
+const videoBuxton = "https://vimeo.com/903765532";
 
 export const App = () => {
   let [isDragStart, setIsDragStart] = useState(false);
@@ -125,6 +127,9 @@ export const App = () => {
         <PhotoSection mediaList={Apashe} title={titleApashe} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
+        <VideoSection src={videoApashe} />
+      </li>
+      <li className={styles.carrouselItem}>
         {renderSection(McQueen, titleMcQueen)}
       </li>
       <li className={styles.carrouselItem}>
@@ -147,6 +152,9 @@ export const App = () => {
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={MarkBuxton} title={titleMarkBuxton} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
+      </li>
+      <li className={styles.carrouselItem}>
+        <VideoSection src={videoBuxton} />
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Renan} title={titleRenan} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
