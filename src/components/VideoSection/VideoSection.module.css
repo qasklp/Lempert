@@ -2,10 +2,9 @@
     width: 100%;
     display: block;
     object-fit: cover;
-    height: 400px;
 
     @media (min-width: 622px) {
-        height: 613px;
+        height: 442px;
     }
     
     @media (min-width: 1200px) {

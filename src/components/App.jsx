@@ -25,13 +25,12 @@ import { Archives, titleArchives } from "./MediaPathes/Archives";
 import mainVideo from "../images/video/mainVideo.mp4";
 import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
 import videoAnej from "../images/video/videoAnej.mp4";
-// import videoLucien from "../images/video/videoLucien.mov";
+import videoLucien from "../images/video/videoLucien.mov";
 
 import { useState, useEffect } from 'react';
 
 const videoApashe = "https://vimeo.com/902262650";
 const videoBuxton = "https://vimeo.com/903765532";
-const videoLucien = "https://vimeo.com/897849313";
 
 export const App = () => {
   let [isDragStart, setIsDragStart] = useState(false);
