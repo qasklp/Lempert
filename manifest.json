@@ -1,0 +1,20 @@
+{
+  "short_name": "ALEXANDRA LEMPERT",
+  "name": "ALEXANDRA LEMPERT",
+  "icons": [
+    {
+      "src": "128.ico",
+      "sizes": "128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
