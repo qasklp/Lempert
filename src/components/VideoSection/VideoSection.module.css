@@ -16,3 +16,80 @@
         height: 828px;
     }
 }
+
+.videoSection{
+    position: relative;
+}
+
+.unmuteButton{
+    position: absolute;
+    left: 10px;
+    top: 100px;
+
+    background: #00000052;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 12px 0;
+
+    @media (min-width: 420px) {
+        top: 85px;
+    }
+        
+    @media (min-width: 520px) {
+        top: 60px;
+    }
+
+    @media (min-width: 622px) {
+        left: 20px;
+        top: 50px;
+    }
+
+    @media (min-width: 740px) {
+        top: 35px;
+    }
+
+    @media (min-width: 800px) {
+        left: 40px;
+        top: 35px;
+    }
+
+    @media (min-width: 865px) {
+        left: 60px;
+    }
+
+    @media (min-width: 900px) {
+        left: 85px;
+    }
+
+    @media (min-width: 950px) {
+        left: 120px;
+    }
+
+    @media (min-width: 1000px) {
+        left: 140px;
+    }
+
+    @media (min-width: 1050px) {
+        left: 160px;
+    }
+
+    @media (min-width: 1100px) {
+        left: 180px;
+    }
+
+    @media (min-width: 1150px) {
+        left: 220px;
+    }
+    
+    @media (min-width: 1200px) {
+        left: calc(50% - 720px);
+        top: 20px;
+    }
+}
+
+.svg{
+    margin-right: 10px;
+}

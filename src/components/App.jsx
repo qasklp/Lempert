@@ -154,7 +154,7 @@ export const App = () => {
         <PhotoSection mediaList={MarkBuxton} title={titleMarkBuxton} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
-        <VideoSection src={videoBuxton} />
+        <VideoSection src={videoBuxton} unmuted={true} />
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Renan} title={titleRenan} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
