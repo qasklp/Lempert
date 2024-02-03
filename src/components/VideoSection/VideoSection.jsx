@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import styles from "./VideoSection.module.css";
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 
 export const VideoSection = ({ src, unmuted }) => {
     const isVimeoSource = src.includes('vimeo.com');
     const [isMuted, setIsMuted] = useState(true);
+    const [isPressed, setIsPressed] = useState(false);
 
     if (isVimeoSource) {
         const videoId = src.split('/').pop(); // Extract video ID from the Vimeo URL
@@ -13,10 +14,13 @@ export const VideoSection = ({ src, unmuted }) => {
 
         const toggleMute = () => {
             setIsMuted(!isMuted);
+            if (!isPressed) {
+                setIsPressed(true);
+            }  
         };
 
         return (
-            <section className={styles.videoSection}>
+            <section className={styles.videoSection} >
                 <iframe
                     className={styles.video}
                     title="Vimeo Video"
@@ -25,8 +29,10 @@ export const VideoSection = ({ src, unmuted }) => {
                     frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen
+                    onClick={toggleMute}
+                    
                 />
-                {unmuted && (
+                {unmuted && !isPressed && (
                     <button type='button' className={styles.unmuteButton} onClick={toggleMute}>
                         {isMuted ?
                             <svg className={styles.svg} fill='#ffffff' width="22px" height="22px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
@@ -37,6 +43,10 @@ export const VideoSection = ({ src, unmuted }) => {
                             </svg>}
                         {isMuted ? 'Click to unmute' : 'Click to mute'}
                     </button>
+                )}
+
+                {unmuted && (
+                    <button type='button' className={styles.invisibleButton} onClick={toggleMute}> </button>
                 )}
 
             </section>

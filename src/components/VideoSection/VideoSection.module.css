@@ -22,9 +22,11 @@
 }
 
 .unmuteButton{
+    z-index: 999;
     position: absolute;
     left: 10px;
     top: 100px;
+    cursor: pointer;
 
     background: #00000052;
     color: #ffffff;
@@ -85,9 +87,24 @@
     }
     
     @media (min-width: 1200px) {
+        left: calc(50% - 530px);
+        top: 20px;
+    }
+
+    @media (min-width: 1600px) {
         left: calc(50% - 720px);
         top: 20px;
     }
+}
+
+.invisibleButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
 }
 
 .svg{
