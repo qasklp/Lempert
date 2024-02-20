@@ -1,4 +1,5 @@
 import { VideoSection } from "./VideoSection/VideoSection";
+import { UnmutedVideoSection } from "./UnmutedVideoSection/UnmutedVideoSection";
 import { MainVideoSection } from "./MainVideoSection/MainVideoSection";
 import { InfoSection } from "./InfoSection/InfoSection";
 import { PhotoSection } from "./PhotoSection/PhotoSection";
@@ -154,7 +155,7 @@ export const App = () => {
         <PhotoSection mediaList={MarkBuxton} title={titleMarkBuxton} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
       </li>
       <li className={styles.carrouselItem}>
-        <VideoSection src={videoBuxton} unmuted={true} />
+        <UnmutedVideoSection src={videoBuxton} />
       </li>
       <li className={styles.carrouselItem}>
         <PhotoSection mediaList={Renan} title={titleRenan} onMouseMove={handleDrag} onMouseDown={dragStart} onMouseUp={dragStop} />
