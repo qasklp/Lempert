@@ -27,10 +27,10 @@ import mainVideo from "../images/video/mainVideo.mp4";
 import videoAxelAndre from "../images/video/videoAxelAndre.mp4";
 import videoAnej from "../images/video/videoAnej.mp4";
 import videoLucien from "../images/video/videoLucien.mov";
+import videoApashe from "../images/video/videoApasheBig.mp4"
 
 import { useState, useEffect } from 'react';
 
-const videoApashe = "https://vimeo.com/902262650";
 const videoBuxton = "https://vimeo.com/903765532";
 
 export const App = () => {

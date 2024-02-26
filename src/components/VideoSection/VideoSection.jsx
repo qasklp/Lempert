@@ -15,7 +15,7 @@ export const VideoSection = ({ src }) => {
             <section className={styles.videoSection} >
                 <iframe
                     className={styles.video}
-                    title="Vimeo Video"
+                    title="Vimeo"
                     src={vimeoSrc}
                     width="100%"
                     loading="lazy"
